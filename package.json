@@ -10,9 +10,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:html && npm run lint:css",
-    "lint:js": "eslint *.js --fix --quiet || echo 'No JS files to lint'",
-    "lint:html": "htmlhint *.html --quiet || echo 'No HTML files to lint'",
-    "lint:css": "stylelint *.css --fix --allow-empty-input --quiet || echo 'No CSS files to lint'",
+    "lint:js": "eslint *.js --fix || echo 'No JS files to lint'",
+    "lint:html": "htmlhint *.html || echo 'No HTML files to lint'",
+    "lint:css": "stylelint *.css --fix --allow-empty-input || echo 'No CSS files to lint'",
     "test": "echo 'No tests yet'"
   },
   "keywords": [

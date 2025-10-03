@@ -10,12 +10,12 @@ export default [
       globals: {
         console: 'readonly',
         document: 'readonly',
-        window: 'readonly'
-      }
+        window: 'readonly',
+      },
     },
     rules: {
       'no-unused-vars': 'warn',
-      'no-console': 'off'
-    }
-  }
+      'no-console': 'off',
+    },
+  },
 ];
