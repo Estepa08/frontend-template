@@ -1,2 +1,1 @@
-// Mood Questionnaire JavaScript
-console.log('Questionnaire loaded');
+// Your JavaScript code here
