@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/Users/evgeniystepanov/node_modules/.bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'lint:css'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v20.12.2
+4 verbose run-script [ 'prelint:css', 'lint:css', 'postlint:css' ]
+5 info prelint:css mood-questionnaire@1.0.0
+6 info lint:css mood-questionnaire@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info mood-questionnaire@1.0.0 Failed to exec lint:css script
+9 verbose stack Error: mood-questionnaire@1.0.0 lint:css: `stylelint **/*.css --fix`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/Users/evgeniystepanov/node_modules/npm/lib/utils/lifecycle.js:217:16)
+9 verbose stack     at EventEmitter.emit (node:events:518:28)
+9 verbose stack     at ChildProcess.<anonymous> (/Users/evgeniystepanov/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at ChildProcess.emit (node:events:518:28)
+9 verbose stack     at maybeClose (node:internal/child_process:1105:16)
+9 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+10 verbose pkgid mood-questionnaire@1.0.0
+11 verbose cwd /Users/evgeniystepanov/mood-questionnaire
+12 error Darwin 24.6.0
+13 error argv "/usr/local/bin/node" "/Users/evgeniystepanov/node_modules/.bin/npm" "run" "lint:css"
+14 error node v20.12.2
+15 error npm  v2.15.12
+16 error code ELIFECYCLE
+17 error mood-questionnaire@1.0.0 lint:css: `stylelint **/*.css --fix`
+17 error Exit status 1
+18 error Failed at the mood-questionnaire@1.0.0 lint:css script 'stylelint **/*.css --fix'.
+18 error This is most likely a problem with the mood-questionnaire package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     stylelint **/*.css --fix
+18 error You can get information on how to open an issue for this project with:
+18 error     npm bugs mood-questionnaire
+18 error Or if that isn't available, you can get their info via:
+18 error
+18 error     npm owner ls mood-questionnaire
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

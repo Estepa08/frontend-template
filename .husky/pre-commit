@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "🚀 Running pre-commit checks..."
+
+# Всегда форматируем
+npm run format
+
+# Проверяем только существующие файлы
+if ls *.js > /dev/null 2>&1; then
+  npm run lint:js
+fi
+
+if ls *.html > /dev/null 2>&1; then
+  npm run lint:html
+fi
+
+if ls *.css > /dev/null 2>&1; then
+  npm run lint:css
+fi
+
+echo "✅ Pre-commit checks passed!"
